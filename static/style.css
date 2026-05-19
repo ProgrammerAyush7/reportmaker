@@ -1,0 +1,261 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f7f8fa;
+    color: #1d1d1f;
+}
+
+.app-shell {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 18px;
+}
+
+.landing-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+.brand-block {
+    margin-bottom: 28px;
+}
+
+.brand-icon {
+    width: 78px;
+    height: 78px;
+    margin: 0 auto 16px auto;
+    border-radius: 22px;
+    background: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+}
+
+.app-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.app-subtitle {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.menu-card {
+    background: white;
+    border-radius: 24px;
+    padding: 14px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.05);
+}
+
+.menu-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: inherit;
+    padding: 18px 14px;
+    border-radius: 18px;
+    transition: all 0.2s ease;
+}
+
+.menu-btn:hover {
+    background: #f3f4f6;
+    color: inherit;
+}
+
+.menu-btn + .menu-btn {
+    margin-top: 8px;
+}
+
+.menu-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+    background: #f5f6f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.menu-text {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    .app-shell {
+        padding: 18px 14px;
+    }
+
+    .app-title {
+        font-size: 1.45rem;
+    }
+
+    .menu-btn {
+        padding: 16px 12px;
+    }
+
+    .menu-text {
+        font-size: 0.96rem;
+    }
+}
+
+.form-card {
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+
+.prefix-select {
+    width: 130px;
+    flex-shrink: 0;
+}
+
+.category-block {
+    border: 1px solid #ececec;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0;
+}
+
+.category-tests {
+    display: none;
+    padding: 0 16px 14px 16px;
+}
+
+.test-row {
+    padding-top: 10px;
+}
+
+.test-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.test-name {
+    flex: 1;
+    font-size: 0.95rem;
+}
+
+.test-input {
+    width: 110px;
+    display: none;
+}
+
+.subtests {
+    display: none;
+    margin-left: 28px;
+    margin-top: 10px;
+}
+
+.subtest-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.subtest-name {
+    flex: 1;
+    font-size: 0.92rem;
+}
+
+.subtest-input {
+    width: 110px;
+}
+
+@media (max-width: 480px) {
+    .subtest-name {
+        font-size: 0.88rem;
+    }
+
+    .test-name {
+        font-size: 0.9rem;
+    }
+}
+
+.report-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #ececec;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    background: white;
+}
+
+.report-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.report-name {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.report-meta {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.report-actions {
+    width: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.pagination-wrap {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+@media (max-width: 576px) {
+    .report-card {
+        flex-direction: column;
+    }
+
+    .report-actions {
+        width: 100%;
+    }
+}

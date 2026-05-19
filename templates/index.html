@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+    <title>Lab Report Manager</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Favicons -->
+    <link rel="icon" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/file-earmark-medical.svg">
+
+    <!-- Custom CSS -->
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+<body>
+
+    <div class="app-shell">
+
+        <div class="container landing-container">
+
+            <div class="brand-block text-center">
+                <div class="brand-icon">
+                    <i class="bi bi-file-earmark-medical"></i>
+                </div>
+
+                <h1 class="app-title">Lab Report Manager</h1>
+
+                <p class="app-subtitle">
+                    Easy and quick report generator
+                </p>
+            </div>
+
+            <div class="menu-card">
+
+                <a href="/report-generator" class="menu-btn">
+                    <span class="menu-icon">
+                        <i class="bi bi-plus-circle"></i>
+                    </span>
+                    <span class="menu-text">Generate New Report</span>
+                </a>
+
+                <a href="/view-reports" class="menu-btn">
+                    <span class="menu-icon">
+                        <i class="bi bi-folder2-open"></i>
+                    </span>
+                    <span class="menu-text">View Reports</span>
+                </a>
+
+                <a href="/edit-reports" class="menu-btn">
+                    <span class="menu-icon">
+                        <i class="bi bi-pencil-square"></i>
+                    </span>
+                    <span class="menu-text">Edit Reports</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
